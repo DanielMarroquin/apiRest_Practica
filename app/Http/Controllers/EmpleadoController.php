@@ -14,7 +14,7 @@ class EmpleadoController extends Controller
         return response()->json(Empleado::all(), 200);
 
     }
-    //Funcion para generar json registros especificos
+   
     public function getEmpleadoById($id){
         $empleado = Empleado::find($id);
         if(is_null($empleado)){
